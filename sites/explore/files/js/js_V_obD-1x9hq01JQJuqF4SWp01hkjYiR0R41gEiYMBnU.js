@@ -3194,6 +3194,10 @@ MarkerClusterer.IMAGE_SIZES = [53, 56, 66, 78, 90];
         // Lets find our class name and change our URL to
         // our defined menu path to open in a colorbox modal.
         attach: function (context, settings) {
+
+            // 2021-06-05: No longer working, disabled.
+            return;
+            
             // Make sure colorbox exists.
             if (!$.isFunction($.colorbox) || typeof settings.colorbox === 'undefined') {
                 return;
